@@ -12,13 +12,17 @@ class Challenges
         Console.WriteLine("Welcome to my coding challenge program. I will be making a variety of functions for you to use. \n Please pick one.");
 
         var choice = Console.ReadLine();
-        int choiceint = int.Parse(choice);
+        int choiceInt = int.Parse(choice);
         bool work = true;
         while (work)
         {
             if (choiceInt == 0)
             {
                 work = false;
+            }
+            else if (choiceInt == 1)
+            {
+                work = true;
             }
         }
 
