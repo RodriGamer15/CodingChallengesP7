@@ -11,6 +11,17 @@ class Challenges
         //Welcome the user to my program
         Console.WriteLine("Welcome to my coding challenge program. I will be making a variety of functions for you to use. \n Please pick one.");
 
+        var choice = Console.ReadLine();
+        int choiceint = int.Parse(choice);
+        bool work = true;
+        while (work)
+        {
+            if (choiceInt == 0)
+            {
+                work = false;
+            }
+        }
+
         Console.WriteLine("We are going to use the number adder today called sum. Please give me two numbers.");
 
         var number1 = Console.ReadLine();
