@@ -114,6 +114,21 @@ class Challenges
 
                 Console.WriteLine("Your number is less than 100." + LessThanOneHundred(numberToUse11, numberToUse12));
             }
+
+            else if (choiceInt == 9)
+            {
+                Console.WriteLine("We are going to see if two integers are equal.\nPlease input your first integer.");
+
+                var number13 = Console.ReadLine;
+                int numberToUse13 = int.Parse(number13);
+
+                Console.WriteLine("Got it, give me your second integer.");
+
+                var number14 = Console.ReadLine;
+                int numberToUse14 = int.Parse(number14);
+
+                Console.WriteLine("Your two integers are." + IsEqualTo(numberToUse13, numberToUse14));
+            }
         }
     }
 
@@ -155,5 +170,10 @@ class Challenges
     public static bool LessThanOneHundred(int numberToUse11, int numberToUse12)
     {
         return numberToUse11 + numberToUse12 <= 100;
+    }
+
+    public static int IsEqualTo(int numberToUse13, int numberToUse14)
+    {
+        return numberToUse13, numberToUse14 ==
     }
 }
