@@ -1,0 +1,15 @@
+C:\Users\Per1Student\Documents\Unity\GitHub\CodingChallengesP7\CodingChallengeTest\obj\Debug\net8.0\CodingChallengeTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Per1Student\Documents\Unity\GitHub\CodingChallengesP7\CodingChallengeTest\obj\Debug\net8.0\CodingChallengeTest.AssemblyInfoInputs.cache
+C:\Users\Per1Student\Documents\Unity\GitHub\CodingChallengesP7\CodingChallengeTest\obj\Debug\net8.0\CodingChallengeTest.AssemblyInfo.cs
+C:\Users\Per1Student\Documents\Unity\GitHub\CodingChallengesP7\CodingChallengeTest\obj\Debug\net8.0\CodingChallengeTest.csproj.CoreCompileInputs.cache
+C:\Users\Per1Student\Documents\Unity\GitHub\CodingChallengesP7\CodingChallengeTest\obj\Debug\net8.0\CodingChallengeTest.sourcelink.json
+C:\Users\Per1Student\Documents\Unity\GitHub\CodingChallengesP7\CodingChallengeTest\bin\Debug\net8.0\CodingChallengeTest.exe
+C:\Users\Per1Student\Documents\Unity\GitHub\CodingChallengesP7\CodingChallengeTest\bin\Debug\net8.0\CodingChallengeTest.deps.json
+C:\Users\Per1Student\Documents\Unity\GitHub\CodingChallengesP7\CodingChallengeTest\bin\Debug\net8.0\CodingChallengeTest.runtimeconfig.json
+C:\Users\Per1Student\Documents\Unity\GitHub\CodingChallengesP7\CodingChallengeTest\bin\Debug\net8.0\CodingChallengeTest.dll
+C:\Users\Per1Student\Documents\Unity\GitHub\CodingChallengesP7\CodingChallengeTest\bin\Debug\net8.0\CodingChallengeTest.pdb
+C:\Users\Per1Student\Documents\Unity\GitHub\CodingChallengesP7\CodingChallengeTest\obj\Debug\net8.0\CodingChallengeTest.dll
+C:\Users\Per1Student\Documents\Unity\GitHub\CodingChallengesP7\CodingChallengeTest\obj\Debug\net8.0\refint\CodingChallengeTest.dll
+C:\Users\Per1Student\Documents\Unity\GitHub\CodingChallengesP7\CodingChallengeTest\obj\Debug\net8.0\CodingChallengeTest.pdb
+C:\Users\Per1Student\Documents\Unity\GitHub\CodingChallengesP7\CodingChallengeTest\obj\Debug\net8.0\CodingChallengeTest.genruntimeconfig.cache
+C:\Users\Per1Student\Documents\Unity\GitHub\CodingChallengesP7\CodingChallengeTest\obj\Debug\net8.0\ref\CodingChallengeTest.dll

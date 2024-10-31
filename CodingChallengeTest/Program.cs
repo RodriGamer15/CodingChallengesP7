@@ -14,7 +14,7 @@ class Challenges
 
         var choice = Console.ReadLine();
         int choiceInt = int.Parse(choice);
-        
+
         while (work)
         {
             if (choiceInt == 1)
@@ -121,6 +121,7 @@ class Challenges
                 Console.WriteLine("We are going to see if two integers are equal.\nPlease input your first integer.");
 
                 var number13 = Console.ReadLine();
+
                 int numberToUse13 = int.Parse(number13);
 
                 Console.WriteLine("Got it, give me your second integer.");
