@@ -14,7 +14,7 @@ class Challenges
 
         var choice = Console.ReadLine();
         int choiceInt = int.Parse(choice);
-        
+
         while (work)
         {
             if (choiceInt == 1)
@@ -140,6 +140,21 @@ class Challenges
                 work = false;
 
             }
+
+            else if (choiceInt == 11)
+            {
+
+            }
+
+            else if (choiceInt == 12)
+            {
+                Console.WriteLine("I am going to convert hours to seconds. \nPlease input a number to convert.");
+
+                var number15 = Console.ReadLine();
+                int numberToUse15 = int.Parse(number14);
+
+                Console.ReadLine("If I convert: " + number15 + "hours to seconds. I get" + Converting(numberToUse15) + "Seconds");
+            }
         }
 
     }
@@ -193,4 +208,9 @@ class Challenges
     {
 
     }*/
+
+    public static int Converting(int number15)
+    {
+        return number15 * 60;
+    }
 }
