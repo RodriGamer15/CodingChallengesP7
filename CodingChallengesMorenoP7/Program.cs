@@ -133,17 +133,12 @@ class Challenges
 
             else if (choiceInt == 10)
             {
-
-            }
-            else
-            {
-                work = false;
-
+                Console.WriteLine();
             }
 
             else if (choiceInt == 11)
             {
-
+                Console.WriteLine();
             }
 
             else if (choiceInt == 12)
@@ -151,9 +146,19 @@ class Challenges
                 Console.WriteLine("I am going to convert hours to seconds. \nPlease input a number to convert.");
 
                 var number15 = Console.ReadLine();
-                int numberToUse15 = int.Parse(number14);
+                int numberToUse15 = int.Parse(number15);
 
-                Console.ReadLine("If I convert: " + number15 + "hours to seconds. I get" + Converting(numberToUse15) + "Seconds");
+                Console.WriteLine("If I convert: " + number15 + "hours to seconds. I get" + Converting(numberToUse15) + "Seconds");
+            }
+
+            else if (choiceInt == 13)
+            {
+                Console.WriteLine("I am going to find the sum of the interior angles of a number-sided polygon. \nPlease input a number.");
+
+                var number16 = Console.ReadLine;
+                int numberToUse16 = int.Parse(number16);
+
+                Console.WriteLine("The sum of the interior angles of your polygon is: " + SumPolygon(numberToUse16));
             }
         }
 
@@ -204,13 +209,13 @@ class Challenges
         return numberToUse13 == numberToUse14;
     }
 
-    /*public static string GiveMeSomething()
-    {
-
-    }*/
-
     public static int Converting(int number15)
     {
         return number15 * 60;
+    }
+
+    public static int SumPolygon(int numberToUse16)
+    {
+        return (numberToUse16 - 2) * 180;
     }
 }
