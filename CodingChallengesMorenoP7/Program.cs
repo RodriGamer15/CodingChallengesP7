@@ -138,7 +138,18 @@ class Challenges
 
             else if (choiceInt == 11)
             {
-                Console.WriteLine();
+                Console.WriteLine("I am going to reverse true or false boolean statements\n Please input your true or false statements.");
+
+                var words1 = Console.ReadLine();
+                bool wordsToUse1 = bool.Parse(words1);
+                if (words1 == "true")
+                {
+                    Console.WriteLine("False!")
+                }
+                else if (words1 == "false")
+                {
+                    Console.WriteLine("True!")
+                }
             }
 
             else if (choiceInt == 12)
@@ -159,6 +170,11 @@ class Challenges
                 int numberToUse16 = int.Parse(number16);
 
                 Console.WriteLine("The sum of the interior angles of your polygon is: " + SumPolygon(numberToUse16));
+            }
+
+            else if (choiceInt == 14)
+            {
+                Console.WriteLine();
             }
         }
 
@@ -217,5 +233,10 @@ class Challenges
     public static int SumPolygon(int numberToUse16)
     {
         return (numberToUse16 - 2) * 180;
+    }
+
+    public static bool Reverse(bool words1)
+    {
+        return words1;
     }
 }
