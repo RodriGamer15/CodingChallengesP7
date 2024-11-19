@@ -144,11 +144,11 @@ class Challenges
                 bool wordsToUse1 = bool.Parse(words1);
                 if (words1 == "true")
                 {
-                    Console.WriteLine("False!")
+                    Console.WriteLine("False!");
                 }
                 else if (words1 == "false")
                 {
-                    Console.WriteLine("True!")
+                    Console.WriteLine("True!");
                 }
             }
 
@@ -174,7 +174,9 @@ class Challenges
 
             else if (choiceInt == 14)
             {
-                Console.WriteLine();
+                Console.WriteLine("We are going to concatenate a passed string with string Edabit.\n Please type something in.");
+                string words2 = Console.ReadLine;
+                Console.WriteLine(nameString(words2));
             }
         }
 
@@ -238,5 +240,10 @@ class Challenges
     public static bool Reverse(bool words1)
     {
         return words1;
+    }
+
+    public static string nameString(string words2)
+    {
+        return words2 + "Edabit";
     }
 }
