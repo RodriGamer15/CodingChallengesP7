@@ -166,7 +166,7 @@ class Challenges
             {
                 Console.WriteLine("I am going to find the sum of the interior angles of a number-sided polygon. \nPlease input a number.");
 
-                var number16 = Console.ReadLine;
+                var number16 = Console.ReadLine();
                 int numberToUse16 = int.Parse(number16);
 
                 Console.WriteLine("The sum of the interior angles of your polygon is: " + SumPolygon(numberToUse16));
@@ -175,8 +175,34 @@ class Challenges
             else if (choiceInt == 14)
             {
                 Console.WriteLine("We are going to concatenate a passed string with string Edabit.\n Please type something in.");
-                string words2 = Console.ReadLine;
+                string words2 = Console.ReadLine();
                 Console.WriteLine(nameString(words2));
+            }
+
+            else if (choiceInt == 15)
+            {
+                Console.WriteLine("We are going to see if two boolean values are giving true and false.\n Please give me true or false.");
+                var words3 = Console.ReadLine();
+                bool wordsToUse3 = bool.Parse(words3);
+                Console.WriteLine("Got it. Please give me true or false again.");
+                var words4 = Console.ReadLine();
+                bool wordsToUse4 = bool.Parse(words4);
+                if ((wordsToUse3 == true) && (wordsToUse4 == false))
+                {
+                    Console.WriteLine("It's false.");
+                }
+                else if ((wordsToUse3 == true) && (wordsToUse4 == true))
+                {
+                    Console.WriteLine("It's true.");
+                }
+                else if ((wordsToUse3 == false) && (wordsToUse4 == true))
+                {
+                    Console.WriteLine("It's false.");
+                }
+                else if ((wordsToUse3 == false) && (wordsToUse4 == false))
+                {
+                    Console.WriteLine("It's false.");
+                }
             }
         }
 
@@ -245,5 +271,11 @@ class Challenges
     public static string nameString(string words2)
     {
         return words2 + "Edabit";
+    }
+
+    public static bool And(bool words3, bool words4)
+    {
+        return words3;
+        return words4;
     }
 }
