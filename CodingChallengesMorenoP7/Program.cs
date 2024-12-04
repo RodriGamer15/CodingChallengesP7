@@ -207,7 +207,7 @@ class Challenges
 
             else if (choiceInt == 16)
             {
-                Console.WriteLine("We ar going to see how many points were scored based on 3-pointers & 2-pointers.\n Please input a value for 3-pointers.");
+                Console.WriteLine("We are going to see how many points were scored based on 3-pointers & 2-pointers.\n Please input a value for 3-pointers.");
 
                 var number17 = Console.ReadLine();
                 int numberToUse17 = int.Parse(number17);
@@ -218,6 +218,21 @@ class Challenges
                 int numberToUse18 = int.Parse(number18);
 
                 Console.WriteLine("The total points scored in the game were: " + Points(numberToUse17, numberToUse18));
+            }
+
+            else if (choiceInt == 17)
+            {
+                Console.WriteLine("We are going to find the perimeter of a rectangle.\n Please input a value for length.");
+
+                var number19 = Console.ReadLine();
+                int numberToUse19 = int.Parse(number19);
+
+                Console.WriteLine("Got it. Give me a value for width.");
+
+                var number20 = Console.ReadLine();
+                int numberToUse20 = int.Parse(number20);
+
+                Console.WriteLine("The perimeter of the rectangle is: " + Perimeter(numberToUse19, numberToUse20));
             }
         }
 
@@ -297,5 +312,10 @@ class Challenges
     public static int Points(int numberToUse17, int numberToUse18)
     {
         return (numberToUse17 * 3) + (numberToUse18 * 2);
+    }
+
+    public static int Perimeter(int numberToUse19, int numberToUse20)
+    {
+        return (numberToUse19 * 2) + (numberToUse20 * 2);
     }
 }
