@@ -234,6 +234,13 @@ class Challenges
 
                 Console.WriteLine("The perimeter of the rectangle is: " + Perimeter(numberToUse19, numberToUse20));
             }
+
+            else if (choiceInt == 18)
+            {
+                Console.WriteLine("We are going to make a greeting\n Please type in a name.");
+                string words4 = Console.ReadLine();
+                Console.WriteLine(HelloName(words4));
+            }
         }
 
     }
@@ -317,5 +324,10 @@ class Challenges
     public static int Perimeter(int numberToUse19, int numberToUse20)
     {
         return (numberToUse19 * 2) + (numberToUse20 * 2);
+    }
+
+    public static string HelloName(string words4)
+    {
+        return "Hello" + words4;
     }
 }
