@@ -327,7 +327,7 @@ class Challenges
 
     public static string nameString(string words2)
     {
-        return words2 + "Edabit";
+        return words2 + " Edabit";
     }
 
     public static bool And(bool words3, bool words4)
@@ -348,7 +348,7 @@ class Challenges
 
     public static string HelloName(string words4)
     {
-        return "Hello" + words4;
+        return "Hello " + words4;
     }
 
     public static int Animals(int numberToUse21, int numberToUse22, int numberToUse23)
