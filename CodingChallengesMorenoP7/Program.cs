@@ -241,6 +241,26 @@ class Challenges
                 string words4 = Console.ReadLine();
                 Console.WriteLine(HelloName(words4));
             }
+
+            else if (choiceInt == 19)
+            {
+                Console.WriteLine("We are going to find the total number of legs among a farmer's animals.\n Please input the number of chickens the farmer has.");
+
+                var number21 = Console.ReadLine();
+                int numberToUse21 = int.Parse(number21);
+
+                Console.WriteLine("Got it. Give me a value for the number of cows.");
+
+                var number22 = Console.ReadLine();
+                int numberToUse22 = int.Parse(number22);
+
+                Console.WriteLine("Got it. Give me a value for the number of pigs.");
+
+                var number23 = Console.ReadLine();
+                int numberToUse23 = int.Parse(number23);
+
+                Console.WriteLine("The total number of legs among a farmer's animals are: " + Animals(numberToUse21, numberToUse22, numberToUse23));
+            }
         }
 
     }
@@ -329,5 +349,10 @@ class Challenges
     public static string HelloName(string words4)
     {
         return "Hello" + words4;
+    }
+
+    public static int Animals(int numberToUse21, int numberToUse22, int numberToUse23)
+    {
+        return (numberToUse21 * 2) + (numberToUse22 * 4) + (numberToUse23 * 4);
     }
 }
