@@ -261,6 +261,26 @@ class Challenges
 
                 Console.WriteLine("The total number of legs among a farmer's animals are: " + Animals(numberToUse21, numberToUse22, numberToUse23));
             }
+
+            else if (choiceInt == 20)
+            {
+                Console.WriteLine("We are going to find the number of points a football team has obtained through wins, draws, and losses.\n Please input the number of wins the team has obtained.");
+
+                var number24 = Console.ReadLine();
+                int numberToUse24 = int.Parse(number24);
+
+                Console.WriteLine("Got it. Give me the number of draws.");
+
+                var number25 = Console.ReadLine();
+                int numberToUse25 = int.Parse(number25);
+
+                Console.WriteLine("Got it. Give me the number of losses.");
+
+                var number26 = Console.ReadLine();
+                int numberToUse26 = int.Parse(number26);
+
+                Console.WriteLine("The total number of points the football team has obtained through wins, draws, and losses are " + FootballPoints(numberToUse24, numberToUse25, numberToUse26));
+            }
         }
 
     }
@@ -354,5 +374,10 @@ class Challenges
     public static int Animals(int numberToUse21, int numberToUse22, int numberToUse23)
     {
         return (numberToUse21 * 2) + (numberToUse22 * 4) + (numberToUse23 * 4);
+    }
+
+    public static int FootballPoints(int numberToUse24, int numberToUse25, int numberToUse26)
+    {
+        return (numberToUse24 * 3) + (numberToUse25 * 1) + (numberToUse26 * 0);
     }
 }
