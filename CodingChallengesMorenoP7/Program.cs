@@ -288,6 +288,13 @@ class Challenges
 
                 Months();
             }
+
+            else if (choiceInt == 22)
+            {
+                Console.WriteLine("We are going to find the minimum and maximum numbers of an array of numbers. Please input an array of numbers.");
+
+                MinandMax();
+            }
         }
 
     }
@@ -390,7 +397,7 @@ class Challenges
 
     public static void Months()
     {
-        redo:
+    redo:
         var input21 = Console.ReadLine();
         int number21 = int.Parse(input21);
         if (number21 < 1)
@@ -446,6 +453,24 @@ class Challenges
 
 
             }
+        }
+    }
+
+    public static void MinandMax()
+    {
+        Console.WriteLine("How many numbers are in your array?");
+        string lengthNum = Console.ReadLine();
+        int length = int.Parse(lengthNum);
+        int[] numbers = new int[length];
+        for (int i = 0; i < (length + 1); i++)
+        {
+            int[i] numbers = Console.ReadLine();
+        }
+        Console.WriteLine("Time to sort.");
+        Array.Sort(numbers);
+        foreach (int i in numbers)
+        {
+            Console.WriteLine(i);
         }
     }
 }
