@@ -295,6 +295,13 @@ class Challenges
 
                 MinandMax();
             }
+
+            else if (choiceInt == 23)
+            {
+                Console.WriteLine("We are going to find the sum of the absolute value of an array of numbers. Please input an array of numbers.");
+
+                AbsoluteValue();
+            }
         }
 
     }
@@ -462,15 +469,43 @@ class Challenges
         string lengthNum = Console.ReadLine();
         int length = int.Parse(lengthNum);
         int[] numbers = new int[length];
-        for (int i = 0; i < (length + 1); i++)
+        Console.WriteLine("Now input the numbers.");
+        for (int i = 0; i < numbers.Length; i++)
         {
-            int[i] numbers = Console.ReadLine();
+            Console.WriteLine("Element " + (i + 1) + " ");
+            var valueInput = Console.ReadLine();
+            int value = int.Parse(valueInput);
+            numbers[i] = value;
         }
-        Console.WriteLine("Time to sort.");
+        Console.WriteLine("\nTime to sort.\n");
         Array.Sort(numbers);
         foreach (int i in numbers)
         {
             Console.WriteLine(i);
         }
+    }
+
+    public static void AbsoluteValue()
+    {
+        Console.WriteLine("How many numbers are in your array?");
+        string lengthNum = Console.ReadLine();
+        int length = int.Parse(lengthNum);
+        int[] numbers = new int[length];
+        Console.WriteLine("Now input the numbers.");
+        for (int i = 0; i < numbers.Length; i++)
+        {
+            Console.WriteLine("Element " + (i + 1) + " ");
+            var valueInput = Console.ReadLine();
+            int value = int.Parse(valueInput);
+            numbers[i] = value;
+        }
+        Console.WriteLine("\nTime to find the sum of the absolute value.\n");
+        int sum = 0;
+        foreach (int i in numbers)
+        {
+            int add = Math.Abs(i);
+            sum += add;
+        }
+        Console.WriteLine(sum);
     }
 }
