@@ -302,6 +302,21 @@ class Challenges
 
                 AbsoluteValue();
             }
+
+            else if (choiceInt == 24)
+            {
+                Console.WriteLine("We are going to take a base number and an exponent number and return its calculation. Please give me a base number");
+
+                var number26 = Console.ReadLine();
+                int numberToUse26 = int.Parse(number26);
+
+                Console.WriteLine("Got it. Give me an exponent number.");
+
+                var number27 = Console.ReadLine();
+                int numberToUse27 = int.Parse(number27);
+
+                Console.WriteLine("");
+            }
         }
 
     }
