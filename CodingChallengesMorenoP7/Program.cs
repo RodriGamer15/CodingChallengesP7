@@ -307,15 +307,7 @@ class Challenges
             {
                 Console.WriteLine("We are going to take a base number and an exponent number and return its calculation. Please give me a base number");
 
-                var number26 = Console.ReadLine();
-                int numberToUse26 = int.Parse(number26);
-
-                Console.WriteLine("Got it. Give me an exponent number.");
-
-                var number27 = Console.ReadLine();
-                int numberToUse27 = int.Parse(number27);
-
-                Console.WriteLine("");
+                Exponent();
             }
             else if (choiceInt == 25)
             {
@@ -525,6 +517,19 @@ class Challenges
             sum += add;
         }
         Console.WriteLine(sum);
+    }
+
+    public static void Exponent()
+    {
+        Console.WriteLine("Calculating exponents:\n\n");
+        Console.WriteLine("Input the base.");
+        var baseInput = Console.ReadLine();
+        float baseNumber = float.Parse(baseInput);
+        Console.WriteLine("Input the exponent.");
+        var exponentInput = Console.ReadLine();
+        float exponentNumber = float.Parse(exponentInput);
+        float result = (float)Math.Pow(baseNumber, exponentNumber);
+        Console.WriteLine(result);
     }
 
     public static void MultiplyArray()
