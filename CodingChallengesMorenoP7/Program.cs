@@ -317,6 +317,12 @@ class Challenges
 
                 Console.WriteLine("");
             }
+            else if (choiceInt == 25)
+            {
+                Console.WriteLine("We are going to multiply all the values in the array by the amount of values in the given array. Please input an array of numbers.");
+
+                MultiplyArray();
+            }
         }
 
     }
@@ -492,12 +498,9 @@ class Challenges
             int value = int.Parse(valueInput);
             numbers[i] = value;
         }
-        Console.WriteLine("\nTime to sort.\n");
-        Array.Sort(numbers);
-        foreach (int i in numbers)
-        {
-            Console.WriteLine(i);
-        }
+        Console.WriteLine("Here are the minimum and maximum numbers.");
+        Console.WriteLine("Min " + numbers.Min());
+        Console.WriteLine("Max " + numbers.Max());
     }
 
     public static void AbsoluteValue()
@@ -522,5 +525,27 @@ class Challenges
             sum += add;
         }
         Console.WriteLine(sum);
+    }
+
+    public static void MultiplyArray()
+    {
+        Console.WriteLine("How many numbers are in your array?");
+        string lengthNum = Console.ReadLine();
+        int length = int.Parse(lengthNum);
+        int[] numbers = new int[length];
+        Console.WriteLine("Now input the numbers.");
+        for (int i = 0; i < numbers.Length; i++)
+        {
+            Console.WriteLine("Element " + (i + 1) + " ");
+            var valueInput = Console.ReadLine();
+            int value = int.Parse(valueInput);
+            numbers[i] = value;
+        }
+        Console.WriteLine();
+        foreach (int i in numbers)
+        {
+            Console.Write((i * length) + " ");
+        }
+        Console.WriteLine("\n");
     }
 }
