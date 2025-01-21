@@ -309,11 +309,17 @@ class Challenges
 
                 Exponent();
             }
+
             else if (choiceInt == 25)
             {
-                Console.WriteLine("We are going to multiply all the values in the array by the amount of values in the given array. Please input an array of numbers.");
+                Console.WriteLine("We are going to multiply all the values in the array by the amount of values in the given array.\nPlease input an array of numbers.");
 
                 MultiplyArray();
+            }
+
+            else if (choiceInt == 26)
+            {
+                Console.WriteLine("We are going to compute the hamming distance between two strings. Please input a your first string");
             }
         }
 

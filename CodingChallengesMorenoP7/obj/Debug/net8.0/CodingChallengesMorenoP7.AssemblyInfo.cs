@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CodingChallengesMorenoP7")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3543f75f1c23d542a4027d01420a8af8c2fe7a12")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4183c2db1bf4056316e03f8764e3200545b8fb04")]
 [assembly: System.Reflection.AssemblyProductAttribute("CodingChallengesMorenoP7")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CodingChallengesMorenoP7")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
