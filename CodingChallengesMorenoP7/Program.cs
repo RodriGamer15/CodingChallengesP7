@@ -1,8 +1,4 @@
-﻿using System;
-
-
-
-class Challenges
+﻿class Challenges
 {
 
 
@@ -317,9 +313,11 @@ class Challenges
                 MultiplyArray();
             }
 
-            else if (choiceInt == 26)
+            else if (choiceInt == 28)
             {
-                Console.WriteLine("We are going to compute the hamming distance between two strings. Please input a your first string");
+                Console.WriteLine("We are going to find the smaller number of a set of numbers. Please input a set of numbers.");
+
+                SmallerNumber();
             }
         }
 
@@ -558,5 +556,23 @@ class Challenges
             Console.Write((i * length) + " ");
         }
         Console.WriteLine("\n");
+    }
+
+    public static void SmallerNumber()
+    {
+        Console.WriteLine("How many numbers are in your set?");
+        string lengthNum = Console.ReadLine();
+        int length = int.Parse(lengthNum);
+        int[] numbers = new int[length];
+        Console.WriteLine("Now input the numbers.");
+        for (int i = 0; i < numbers.Length; i++)
+        {
+            Console.WriteLine("Element " + (i + 1) + " ");
+            var valueInput = Console.ReadLine();
+            int value = int.Parse(valueInput);
+            numbers[i] = value;
+        }
+        Console.WriteLine("Here is the smaller number.");
+        Console.WriteLine("Smallest " + numbers.Min());
     }
 }
