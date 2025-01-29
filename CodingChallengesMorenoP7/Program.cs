@@ -319,6 +319,11 @@
 
                 SmallerNumber();
             }
+
+            else if (choiceInt == 29)
+            {
+                Factorial();
+            }
         }
 
     }
@@ -574,5 +579,17 @@
         }
         Console.WriteLine("Here is the smaller number.");
         Console.WriteLine("Smallest " + numbers.Min());
+    }
+
+    public static void Factorial()
+    {
+        Console.WriteLine("Enter a value n>=0");
+        int UserInput = int.Parse(Console.ReadLine());
+        int factorial = 1;
+        for (int i = 1; i <= UserInput; i++)
+        {
+            factorial *= i;
+        }
+        Console.WriteLine(factorial);
     }
 }
