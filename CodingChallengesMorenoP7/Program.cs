@@ -324,6 +324,11 @@
             {
                 Factorial();
             }
+
+            else if (choiceInt == 30)
+            {
+                ReturnVowel();
+            }
         }
 
     }
@@ -591,5 +596,25 @@
             factorial *= i;
         }
         Console.WriteLine(factorial);
+    }
+
+    public static void ReturnVowel()
+    {
+        int total = 0;
+        var vowels = new HashSet<char> { 'a', 'e', 'i', 'o', 'u' };
+
+        Console.WriteLine("Enter a name or sentence.");
+        string sentence = Console.ReadLine().ToLower();
+
+        for (int i = 0; i < sentence.Length; i++)
+        {
+            if (vowels.Contains(sentence[i]))
+            {
+                total++;
+            }
+        }
+        Console.WriteLine("Your total number of vowels is: {0}", total);
+
+        Console.ReadLine();
     }
 }
